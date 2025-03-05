@@ -33,7 +33,7 @@ public class ExpenseTracker {
     private static void viewExpenses() {
         System.out.println("\nExpenses:");
         for (Map.Entry<String, Double> entry : expenses.entrySet()) {
-            System.out.println(entry.getKey() + ": $" + entry.getValue());
+            System.out.printf("%s: $%.2f\n", entry.getKey(), entry.getValue());
         }
     }
 
